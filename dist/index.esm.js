@@ -1876,8 +1876,13 @@ var Icon$P = function (props) {
 
 var Logo = function (_a) {
     var isDark = _a.isDark, props = __rest(_a, ["isDark"]);
-    return (React.createElement(Svg, __assign({ viewBox: "25 0 150 26" }, props),
-        React.createElement("image", { width: "205", height: "26", href: isDark ? "/images/Logo.svg" : "/images/Logo.svg" })));
+    return (React.createElement(Svg, __assign({ viewBox: "25 0 150 56" }, props),
+        React.createElement("image", { width: "245", height: "56", href: isDark ? "/images/matv.png" : "/images/matv.png" })))
+};
+var Logo$2 = function (_a) {
+    var isDark = _a.isDark, props = __rest(_a, ["isDark"]);
+    return (React.createElement(Svg, __assign({ viewBox: "0 0 150 56" , width:"110px"}, props),
+        React.createElement("image", { width: "140", height: "66", href: isDark ? "/images/logo2.svg" : "/images/logo2.svg" })))
 };
 
 var Icon$Q = function (props) {
@@ -2753,6 +2758,7 @@ var Menu = function (_a) {
     return (React.createElement(Wrapper$1, null,
         React.createElement(StyledNav, { showMenu: showMenu },
             React.createElement(Logo$1, { isMobile: isMobile, isPushed: isPushed, togglePush: function () { return setIsPushed(function (prevState) { return !prevState; }); }, isDark: isDark, href: (_b = homeLink === null || homeLink === void 0 ? void 0 : homeLink.href) !== null && _b !== void 0 ? _b : "/" }),
+            React.createElement(Logo$2, { isMobile: isMobile, isPushed: isPushed, togglePush: function () { return setIsPushed(function (prevState) { return !prevState; }); },style: { marginLeft:3}, isDark: isDark, href: (_b = homeLink === null || homeLink === void 0 ? void 0 : homeLink.href) !== null && _b !== void 0 ? _b : "/" }),
             React.createElement(TopMenu, { isPushed: isPushed, isMobile: isMobile, isDark: isDark, toggleTheme: toggleTheme, langs: langs, setLang: setLang, currentLang: currentLang, cakePriceUsd: cakePriceUsd, pushNav: setIsPushed, links: links, priceLink: priceLink }),
             React.createElement(Flex, null,
                 React.createElement(UserBlock, { account: account, login: login, logout: logout }),

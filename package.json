@@ -1,5 +1,5 @@
 {
-  "name": "@goburhan/metavill-ui",
+  "name": "@goburhan/meta-ui",
   "version": "1.0.0",
   "description": "Set of UI components for Robinia projects",
   "main": "dist/index.cjs.js",
